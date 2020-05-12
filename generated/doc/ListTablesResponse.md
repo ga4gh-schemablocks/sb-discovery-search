@@ -69,7 +69,7 @@ __Type:__ object
   </tr>
   <tr>
     <th>tables</th>
-    <td>array of #/components/schemas/Table</td>
+    <td>array of "#/components/schemas/Table"</td>
   </tr>
 
 </table>
@@ -81,19 +81,11 @@ __Type:__ object
 
 
 
-##### `pagination` Value Example  
-
 
 #### tables
 
-* type: array of #/components/schemas/Table
+* type: array of "#/components/schemas/Table"
 
 
-
-##### `tables` Value Example  
-
-
-
-### `ListTablesResponse` Value Example  
 
 

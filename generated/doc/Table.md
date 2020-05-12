@@ -87,8 +87,6 @@ __Description:__ Describes a Table hosted by this search node.
 
 
 
-##### `data_model` Value Example  
-
 
 #### description
 
@@ -96,19 +94,11 @@ __Description:__ Describes a Table hosted by this search node.
 
 Optional description of the Table
 
-##### `description` Value Example  
-
 
 #### name
 
 * type: string
 
 Table name
-
-##### `name` Value Example  
-
-
-
-### `Table` Value Example  
 
 
