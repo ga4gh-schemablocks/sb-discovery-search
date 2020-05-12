@@ -1,8 +1,6 @@
-$id: https://schemablocks.org/schemas/sb-discovery-search/Table/0.1.0
+$id: https://schemablocks.org/schemas/sb-discovery-search/TableData/0.1.0
 $schema: http://json-schema.org/draft-07/schema#
-description: 'Describes a Table hosted by this search node.
-
-  '
+description: A paginated collection of tabular data
 meta:
   contributors:
   - description: Miro Cupak
@@ -19,17 +17,19 @@ meta:
   - description: Discovery Search
     id: https://github.com/ga4gh-discovery/ga4gh-discovery-search/tree/develop/spec
 properties:
+  data:
+    description: Page of JSON values, each adhering to the schema given in the "data_model"
+      property
+    items:
+      type: object
+    type: array
   data_model:
     $ref: http://json-schema.org/draft-07/schema#
-  description:
-    description: Optional description of the Table
-    type: string
-  name:
-    description: Table name
-    type: string
+  pagination:
+    $ref: '#/components/schemas/Pagination'
 required:
-- name
 - data_model
-title: Table
+- data
+title: TableData
 type: object
 version: 0.1.0
